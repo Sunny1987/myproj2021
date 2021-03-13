@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 //import 'package:shoppingapp2/app_consts/app_var.dart';
 
+/************************************************************ */
+/* Author: Sabyasachi Roy                                     */
+/* Name: Category Card                                        */
+/* Description: This card is used to display the category     */
+/* cards                                                      */
+/* Parameters : Image, productname                            */
+/************************************************************ */
+
 class CategoryCard extends StatelessWidget {
   final String image;
   final String productname;
-  CategoryCard({this.image,this.productname});
+  CategoryCard({this.image, this.productname});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +29,7 @@ class CategoryCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
-                offset: Offset(0, 3.0), blurRadius: 3.0, color: Colors.grey)
+                offset: Offset(0, 1.0), blurRadius: 1.0, color: Colors.grey)
           ],
         ),
         child: Column(
@@ -30,18 +38,22 @@ class CategoryCard extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                 color: Colors.grey.shade300,
-                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20.0),bottomRight: Radius.circular(20.0)),
+                borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(20.0),
+                    bottomRight: Radius.circular(20.0)),
               ),
               height: 40,
-              
+
               //width: MediaQuery.of(context).size.width,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Center(child: Text('$productname',style: TextStyle(
-                    fontFamily: 'Nexa',
-                    fontWeight: FontWeight.bold
-                  ),)),
+                  Center(
+                      child: Text(
+                    '$productname',
+                    style: TextStyle(
+                        fontFamily: 'Nexa', fontWeight: FontWeight.bold),
+                  )),
                 ],
               ),
             ),

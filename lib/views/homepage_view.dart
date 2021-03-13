@@ -177,11 +177,11 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   Expanded(
-                      flex: 2,
+                      flex: 3,
                       child: Container(
                         //padding: EdgeInsets.symmetric(horizontal: 20.0),
-                        height: MediaQuery.of(context).size.width * 0.3,
-                        width: MediaQuery.of(context).size.width * 0.4,
+                        height: MediaQuery.of(context).size.width * 0.4,
+                        width: MediaQuery.of(context).size.width * 0.3,
                         decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage(dashboard), fit: BoxFit.cover),
@@ -199,7 +199,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       )),
                   Expanded(
-                    flex: 3,
+                    flex: 4,
                     child: Container(
                       padding: EdgeInsets.symmetric(
                           horizontal: 10.0, vertical: 10.0),
