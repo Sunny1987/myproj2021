@@ -289,7 +289,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage>
                       children: <Widget>[
                         Container(
                           width: double.infinity,
-                          height: 300.0,
+                          height: 280.0,
                           child: GestureDetector(
                             onTap: () {
                               Navigator.of(context).push(MaterialPageRoute(
@@ -827,7 +827,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage>
                                                       .size
                                                       .width *
                                                   0.9,
-                                              height: 60,
+                                              height: 40,
                                               child: Material(
                                                 elevation: 5.0,
                                                 color: Color(myyellow),
