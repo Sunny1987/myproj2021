@@ -59,39 +59,77 @@ class _HomePageState extends State<HomePage> {
                       Widget countwidget;
                       if (snapshot.hasData) {
                         _count = snapshot.data;
-                        countwidget = Stack(
-                          children: <Widget>[
-                            IconButton(
-                                icon: Icon(Icons.shopping_cart),
-                                onPressed: () {
-                                  Navigator.pushNamed(context, ShoppingCart.id);
-                                }),
-                            Positioned(
-                              right: 7,
-                              top: 5,
-                              child: Container(
-                                padding: EdgeInsets.all(2),
-                                decoration: new BoxDecoration(
-                                  color: Color(myyellow),
-                                  borderRadius: BorderRadius.circular(6),
+                        if (_count == 0) {
+                          countwidget = Stack(
+                            children: <Widget>[
+                              IconButton(
+                                  icon: Icon(Icons.shopping_cart),
+                                  onPressed: () {
+                                    Navigator.pushNamed(
+                                        context, ShoppingCart.id);
+                                  }),
+                              /*Positioned(
+                                right: 7,
+                                top: 5,
+                                child: Container(
+                                  padding: EdgeInsets.all(2),
+                                  decoration: new BoxDecoration(
+                                    color: Color(myyellow),
+                                    borderRadius: BorderRadius.circular(6),
+                                  ),
+                                  constraints: BoxConstraints(
+                                    minWidth: 16,
+                                    minHeight: 16,
+                                  ),
+                                  child: Text(
+                                    '$_count',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 8,
+                                        fontFamily: 'Nexa',
+                                        fontWeight: FontWeight.bold),
+                                    textAlign: TextAlign.center,
+                                  ),
                                 ),
-                                constraints: BoxConstraints(
-                                  minWidth: 16,
-                                  minHeight: 16,
-                                ),
-                                child: Text(
-                                  '$_count',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 8,
-                                      fontFamily: 'Nexa',
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
+                              ),*/
+                            ],
+                          );
+                        } else {
+                          countwidget = Stack(
+                            children: <Widget>[
+                              IconButton(
+                                  icon: Icon(Icons.shopping_cart),
+                                  onPressed: () {
+                                    Navigator.pushNamed(
+                                        context, ShoppingCart.id);
+                                  }),
+                              Positioned(
+                                right: 7,
+                                top: 5,
+                                child: Container(
+                                  padding: EdgeInsets.all(2),
+                                  decoration: new BoxDecoration(
+                                    color: Color(myyellow),
+                                    borderRadius: BorderRadius.circular(6),
+                                  ),
+                                  constraints: BoxConstraints(
+                                    minWidth: 16,
+                                    minHeight: 16,
+                                  ),
+                                  child: Text(
+                                    '$_count',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 8,
+                                        fontFamily: 'Nexa',
+                                        fontWeight: FontWeight.bold),
+                                    textAlign: TextAlign.center,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
-                        );
+                            ],
+                          );
+                        }
                       } else if (snapshot.hasError) {
                         Stack(
                           children: <Widget>[
