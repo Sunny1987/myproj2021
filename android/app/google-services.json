@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "756168875867",
+    "firebase_url": "https://talk-8fb9d.firebaseio.com",
+    "project_id": "talk-8fb9d",
+    "storage_bucket": "talk-8fb9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756168875867:android:e86b1c193922916154c47e",
+        "android_client_info": {
+          "package_name": "com.example.shoppingapp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756168875867-4nlouag0b6phoua103fkok7e76mr3a1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ0Q9GvK3NchSDIqzgEZoZ2idn0WRpeJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "756168875867-4nlouag0b6phoua103fkok7e76mr3a1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756168875867:android:9377e92e0c84e25754c47e",
+        "android_client_info": {
+          "package_name": "com.sabroy1987.sareeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756168875867-4nlouag0b6phoua103fkok7e76mr3a1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ0Q9GvK3NchSDIqzgEZoZ2idn0WRpeJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "756168875867-4nlouag0b6phoua103fkok7e76mr3a1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
